@@ -62,17 +62,12 @@ nav {
 .img-headshot {
   max-width: 440px;
 }
-.img-portrait {
-  max-height: 620px;
- }
- .img-landscape {
-   max-width: 520px;
- }
 #arrow-icon {
   height: 24px;
 }
 video {
-  max-width: 440px;
+  width: 100%;
+  overflow: hidden;
 }
 img {
   width: 100%;
