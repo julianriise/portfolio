@@ -54,7 +54,8 @@ nav {
   justify-content: space-between;
 }
 .brand {
-  display: flex;;
+  display: flex;
+  align-items: start;
 }
 
 /*--- Media ---*/
@@ -82,10 +83,11 @@ h1 {
 
 /*--- Footer ---*/
 footer {
+  padding: 16px 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: .75rem;
+  font-size: .85rem;
   color: gray;
 }
 
