@@ -87,7 +87,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: .85rem;
+  font-size: 14px;
   color: gray;
 }
 
@@ -157,5 +157,8 @@ button:hover {
   }
   h1 {
     font-size: 30px;
+  }
+  span {
+    font-size: 16px;
   }
 }
