@@ -30,7 +30,7 @@ html {
   display: grid;
   grid-gap: 2em;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-}
+  justify-items: center;
 }
 .block {
   max-width: 100%;
@@ -38,7 +38,6 @@ html {
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
-
 .project-container {
   margin: 16px;
 }
@@ -53,6 +52,9 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.brand {
+  display: flex;;
 }
 
 /*--- Media ---*/
