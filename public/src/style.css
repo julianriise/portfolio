@@ -151,3 +151,11 @@ button:hover {
     grid-row: auto / span 2;
   }
 }
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
