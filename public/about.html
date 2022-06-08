@@ -6,9 +6,10 @@
   <title>Julian Riise - Om</title>
   <link rel="stylesheet" href="src/style.css">
   <script src="https://kit.fontawesome.com/c6db5c7a6f.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
 </head>
 <body>
-<div id="content">
+<div class="content">
   <header>
     <nav>
       <div class="brand">
@@ -58,10 +59,15 @@
     </div>
   </main>
   <footer>
-    <p>Utviklet av Julian Riise © 2022</p>
-    <p><a href="https://www.gdprprivacynotice.com/live.php?token=RwzytTruVHjwkLjvp6q4Qp3x1Kijga7q">Privacy</a></p>
+    <span>Utviklet av Julian Riise © 2022</span>
+    <span><a href="https://www.gdprprivacynotice.com/live.php?token=RwzytTruVHjwkLjvp6q4Qp3x1Kijga7q">Privacy</a></span>
   </footer>
-
 </div>
+
+<script>
+  ScrollReveal().reveal('.image-container');
+  ScrollReveal().reveal('.project-text', { interval: 500, delay: 250 });
+</script>
+
 </body>
 </html>

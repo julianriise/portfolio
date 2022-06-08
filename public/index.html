@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Julian Riise - Portefølje</title>
   <link rel="stylesheet" href="src/style.css">
+  <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
 </head>
 <body>
-<div id="content">
+<div class="content">
   <header>
-    <nav>
+    <nav class="nav">
       <div class="brand">
         <a href="index.html">
           <h1>Julian Riise</h1>
@@ -229,5 +230,10 @@
     <span><a href="https://www.gdprprivacynotice.com/live.php?token=RwzytTruVHjwkLjvp6q4Qp3x1Kijga7q" target="_blank">Privacy</a></span>
   </footer>
 </div>
+
+<script>
+  ScrollReveal().reveal('.block', { interval: 0, reset: true, viewOffset: { top: -100 }});
+</script>
+
 </body>
 </html>

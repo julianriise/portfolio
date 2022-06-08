@@ -18,15 +18,21 @@ html {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+html.sr .load-hidden {
+  visibility: hidden;
+}
+html.sr .block {
+  visibility: hidden;
+}
 
 /*--- Content ---*/
-#content {
+.content {
   height: 100%;
   max-width: 950px;
   margin: auto;
 }
 .container {
-  margin: 16px;
+  margin: 32px 16px;
   display: grid;
   grid-gap: 16px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -39,11 +45,12 @@ html {
   grid-template-rows: auto 1fr auto;
 }
 .project-container {
-  margin: 16px;
+  margin: 32px 16px;
 }
 
 /*--- Header ---*/
 header {
+  margin: 16px 0 0 0;
   position: sticky;
   top: 0;
 }
@@ -152,7 +159,7 @@ button:hover {
   }
 }
 @media screen and (max-width: 600px) {
-  p {
+  p, li {
     font-size: 18px;
   }
   h1 {
