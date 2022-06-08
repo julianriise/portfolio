@@ -7,6 +7,7 @@ html, body {
   display: block;
   line-height: 1.2;
   min-height: 100vh;
+  box-sizing: border-box;
 }
 html {
   background: #f1f1f1;
@@ -25,8 +26,7 @@ html {
   margin: auto;
 }
 .container {
-  margin: 1em 1em;
-  padding: 1em;
+  margin: 16px;
   display: grid;
   grid-gap: 2em;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
@@ -40,18 +40,16 @@ html {
 }
 
 .project-container {
-  margin-top: 2em;
-  padding: 0 2em;
+  margin: 16px;
 }
 
 /*--- Header ---*/
 header {
   position: sticky;
   top: 0;
-  padding: 16px;
 }
 nav {
-  margin: 1em;
+  padding: 16px 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
