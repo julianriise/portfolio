@@ -8,6 +8,7 @@ html, body {
   line-height: 1.2;
   min-height: 100vh;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 html {
   background: #f1f1f1;
@@ -28,8 +29,8 @@ html {
 .container {
   margin: 16px;
   display: grid;
-  grid-gap: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
 }
 .block {
@@ -146,7 +147,7 @@ button:hover {
 }
 
 /*--- Media Query ---*/
-@media (min-width: 720px) {
+@media (min-width: 690px) {
   .span-2c {
     grid-column: auto / span 2;
   }
