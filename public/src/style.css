@@ -17,17 +17,23 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-/*--- Contents ---*/
-article {
+/*--- Content ---*/
+#content {
   height: 100%;
-  max-width: 720px;
+  max-width: 950px;
   margin: auto;
-  padding: 12px;
-  display: grid;
-  grid-template: auto 1fr auto / 1fr;
 }
-main {
-  margin: 0 16px;
+.container {
+  padding: 3em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: first;
 }
 
 /*--- Header ---*/
@@ -104,6 +110,8 @@ button:hover {
 
 /*--- Project area settings ---*/
 .project-container {
+  max-width: 950;
+  padding: 3em;
   margin-bottom: 48px;
   display: flex;
   flex-direction: column;
@@ -131,12 +139,6 @@ button:hover {
   grid-template-rows: 1fr auto;
 }
 
-.main-content {
-  margin: 48px 0;
-  display: flex;
-  justify-content: center;
-}
-
 /*--- Special Types ---*/
 .fade {
   color: #5c5c5c;
@@ -144,4 +146,14 @@ button:hover {
 }
 .fade:hover {
   color: #1a202c;
+}
+
+/*--- Media Query ---*/
+@media (min-width: 920px) {
+  .span-2c {
+    grid-column: auto / span 2;
+  }
+  .span-2r {
+    grid-row: auto / span 2;
+  }
 }
