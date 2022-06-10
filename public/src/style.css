@@ -26,6 +26,7 @@ html.sr .block {
 }
 
 /*--- Animation ---*/
+/*
 .skeleton {
   animation: skeleton-loading .85s linear infinite alternate;
 }
@@ -36,7 +37,7 @@ html.sr .block {
   100% {
     background-color: hsl(0, 0%, 95%);
   }
-}
+}*/
 
 /*--- Content ---*/
 .content {
